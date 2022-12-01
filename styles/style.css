@@ -1,5 +1,10 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 /* 바디 */
 body {
   background-color: rgb(232, 234, 238);
@@ -16,7 +21,6 @@ body {
 .slogan,
 .footer-inner {
   width: 940px;
-  box-sizing: border-box;
   /* padding 좌우 30px을 width 940에 포함시킴 */
   margin: 0 auto;
 }
@@ -34,13 +38,34 @@ body {
 }
 /* 메인 */
 .main {
-  background-color: rgb(56, 205, 211);
+  background-color: gold;
   height: 50vh;
+  display: flow-root;
+  padding: 0 15px 0 15px;
+  /* BFC */
 }
+.group {
+  margin: 0 15px;
+  float: left;
+}
+.group1 {
+  background-color: violet;
+  width: 250px;
+}
+.group2 {
+  background-color: salmon;
+  width: 380px;
+}
+.group3 {
+  background-color: red;
+  width: 190px;
+}
+
 /* 슬로건 */
 .slogan {
-  background-color: rgb(232, 234, 238);
+  background-color: green;
   height: 10vh;
+  clear: both;
 }
 /* 푸터 */
 .footer {
