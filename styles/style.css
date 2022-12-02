@@ -40,13 +40,9 @@ body {
 .main {
   background-color: gold;
   height: 50vh;
-  display: flow-root;
-  padding: 0 15px 0 15px;
+  display: flex;
+  flex-direction: row;
   /* BFC */
-}
-.group {
-  margin: 0 15px;
-  float: left;
 }
 .group1 {
   background-color: violet;
@@ -59,6 +55,7 @@ body {
 .group3 {
   background-color: red;
   width: 190px;
+  order: -1;
 }
 
 /* 슬로건 */
