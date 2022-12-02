@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹카페</title>
     <link
-      rel="stylesheet"
-      as="style"
+      rel="preload"
+      as="font"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css"
     />
@@ -15,11 +15,19 @@
   </head>
   <body>
     <header class="header">
+     <!-- 로고 -->
       <h1 class="logo">
         <a href="./index-complete.html">
-          <img src="./assets/logo.png" alt="logoimg" />
+          <img src="./assets/logo.png" alt="web cafe" width="165" height="35"/>
         </a>
       </h1>
+      <ul class="meber">
+        <li><a href="/">홈</a></li>
+        <li><span class="diveder" aria-hidden="true">:</span>로그인<a href="/"></a></li>
+        <li><span class="diveder" aria-hidden="true">:</span>회원가입<a href="/"></a></li>
+        <li><span class="diveder" aria-hidden="true">:</span>사이트맵<a href="/"></a></li>
+        <li><span class="diveder" aria-hidden="true">:</span>english<a href="/"></a></li>
+      </ul>
     </header>
     <div class="visual">비주얼</div>
     <main class="main">
