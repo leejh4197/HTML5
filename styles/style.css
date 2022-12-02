@@ -39,10 +39,12 @@ body {
 /* 메인 */
 .main {
   background-color: gold;
-  height: 50vh;
+  min-height: 450px;
   display: flex;
-  flex-direction: row;
-  /* BFC */
+  flex-wrap: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
 }
 .group1 {
   background-color: violet;
@@ -55,7 +57,6 @@ body {
 .group3 {
   background-color: red;
   width: 190px;
-  order: -1;
 }
 
 /* 슬로건 */
