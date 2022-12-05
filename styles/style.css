@@ -34,12 +34,10 @@ body {
 }
 /* 헤더 */
 .header {
-  background-color: rgb(56, 205, 211);
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
   padding: 0 50px;
   /* 시계방향 */
-  height: 15vh;
-  border-radius: 0 0 15px 15px;
-  position: relative;
 }
 /* 로고 */
 .logo {
