@@ -148,6 +148,9 @@ body {
   position: absolute;
   display: none;
 }
+.is-active .sub-menu{
+  display: block;
+}
 
 /* 비주얼 */
 .visual {
