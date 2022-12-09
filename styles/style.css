@@ -264,10 +264,11 @@ body {
 
 /* 메인 */
 .main {
-  background: lightgreen;
-  height: 50vh;
+  background: #fff;
+  min-height: 450px;
   display: flow-root;
-  padding: 0 15px;
+  padding: 30px 15px;
+  border-radius: 15px 15px 0 0;
 }
 
 .group {
@@ -276,7 +277,7 @@ body {
 }
 
 .group1 {
-  background-color: violet;
+  /* background-color: violet; */
   width: 250px;
 }
 .group2 {
@@ -286,6 +287,56 @@ body {
 .group3 {
   background-color: gold;
   width: 190px;
+}
+
+/* 로그인 */
+.login {
+  background: orange radial-gradient(circle at right top, orange, orangered);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+.login-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ff0;
+  text-indent: 10px;
+}
+.login-form {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.login-form fieldset {
+  position: relative;
+}
+.user-email {
+  background-color: blue;
+}
+.user-pw {
+  background-color: coral;
+}
+.login-form label {
+  display: inline-block;
+  background-color: firebrick;
+  width: 4em;
+}
+.login-form input {
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+}
+
+.login-button {
+  position: absolute;
+}
+
+.sign {
+  padding: 0 0 5px 5px;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
 }
 
 /* 슬로건 */
