@@ -3,7 +3,8 @@
 @import url(./fonts.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -307,36 +308,60 @@ body {
   background-color: white;
   border-radius: 5px 5px 0 0;
   padding: 10px 10px 0 10px;
-  border-bottom: 1px solid #f2f2f2;
 }
 .login-form fieldset {
   position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
 }
-.user-email {
-  background-color: blue;
-}
+.user-email,
 .user-pw {
-  background-color: coral;
+  margin-bottom: 5px;
 }
+
 .login-form label {
   display: inline-block;
-  background-color: firebrick;
   width: 4em;
 }
 .login-form input {
   width: 90px;
   height: 24px;
   border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  border-radius: 3px;
 }
 
 .login-button {
   position: absolute;
+  height: 53px;
+  top: 0;
+  right: 0;
+  background-color: orangered;
+  color: #fff;
+  border: 0;
+  padding: 0 8px;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 .sign {
-  padding: 0 0 5px 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   background-color: white;
   border-radius: 0 0 5px 5px;
+  padding: 4px 10px;
+}
+.sign a {
+  display: block;
+  padding: 6px 0;
+  letter-spacing: -1px;
+}
+.sign a::before {
+  color: coral;
+  content: "\e803";
+  font-family: "fontello";
+  margin-right: 8px;
 }
 
 /* 슬로건 */
