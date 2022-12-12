@@ -1,6 +1,7 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./fonts.css);
+@import url(fontello.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden,
@@ -282,7 +283,6 @@ body {
   width: 250px;
 }
 .group2 {
-  background-color: salmon;
   width: 380px;
 }
 .group3 {
@@ -419,7 +419,7 @@ body {
 .term-list-thumbnail img {
   vertical-align: middle;
 }
-.term-list-brief{
+.term-list-brief {
   margin-top: 5px;
   line-height: 1.5;
 }
@@ -430,6 +430,45 @@ body {
 }
 .cross .term-list-thumbnail {
   float: right;
+}
+/* 검색 폼 */
+.search-form {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  padding: 15px 25px 10px;
+  border: 1px solid #aaa;
+  border-radius: 15px 15px 0 0;
+}
+.search-form-inner {
+  display: flex;
+  white-space: nowrap;
+}
+.form-group {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+.form-group-label {
+  white-space: nowrap;
+  margin-right: 10px;
+}
+.form-group-input {
+  flex-grow: 1;
+  min-width: 0;
+  padding: 1px 1px 1px 5px;
+  border: 1px solid #aaa;
+  height: 24px;
+}
+
+.search-button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+  white-space: nowrap;
+  height: 24px;
+  border: 0;
+  padding: 0 10px;
+  font-size: 12px;
 }
 /* 슬로건 */
 .slogan {
