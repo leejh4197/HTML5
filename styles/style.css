@@ -674,14 +674,12 @@ body {
   position: relative;
 }
 .favorite-list {
-  background-color: yellow;
   list-style-type: none;
 }
 
 .favorite-list li {
   margin-top: 10px;
   counter-increment: numbering;
-  background-color: #e85e2c;
   position: relative;
 }
 
@@ -705,10 +703,9 @@ body {
   top: 50%;
   right: 0;
   margin-top: -6px;
-  display: inline-block;
   width: 20px;
   height: 11px;
-  background: lime url(./images/rank.png) no-repeat 100% 0;
+  background: url(./images/rank.png) no-repeat 100% 0;
 }
 .stop {
   background-position: 100% 48%;
